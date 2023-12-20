@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Monoton&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/model.png), url(../img/pic1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: screen;
+  transition: 1s;
+}
+section h1 {
+  position: absolute;
+  top: 50%;
+  left: 5vw;
+  transform: translateY(-70px);
+  font: normal 5vw/1 "monoton";
+  color: #777;
+}
+section h1 span {
+  color: orange;
+  font-size: 6vw;
+  transition: all 1s;
+}
+section ul {
+  position: absolute;
+  top: 65%;
+  left: 6vw;
+  display: flex;
+}
+section ul li {
+  cursor: pointer;
+  margin-right: 50px;
+  font: bold 16px/1 "arial";
+  color: #111;
+}
+section ul li.on {
+  color: #333;
+}
+section ul li.on:nth-of-type(1) {
+  color: orangered;
+}
+section ul li.on:nth-of-type(2) {
+  color: cornflowerblue;
+}
+section ul li.on:nth-of-type(3) {
+  color: darkgreen;
+}
+
+/*# sourceMappingURL=style.css.map */
